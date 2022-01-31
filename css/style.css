@@ -2,7 +2,7 @@
 
 i {
     font-size: 1.5rem;
-    padding-right: 10px;
+    padding: 0 10px;
     color: grey;
 }
 
@@ -55,6 +55,7 @@ img {
 
 #section-message {
     background-image: url("../img/mine.jpg");
+    position: relative;
 }
 
 /* Header current contact */
@@ -76,5 +77,18 @@ img {
 
 #message #received-message p {
     background-color: white;
+}
+
+/* Input Message */
+
+#input-message {
+    background-color: rgb(234,234,234);
+    position: absolute;
+    bottom: 0;
+}
+
+#input-message input {
+    width: 700px;
+    height: 50px;
 }
 
