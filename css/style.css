@@ -6,6 +6,10 @@ i {
     color: grey;
 }
 
+.color-grey {
+    color: grey;
+}
+
 /* Background */
 
 #bg-stop {
@@ -29,4 +33,15 @@ i {
 
 #user-info img {
     width: 50px;
+}
+
+/* Alert Message */
+
+#alert-message {
+    background-color: rgb(142,218,252);
+}
+
+#bells i {
+    background-color: white;
+    color: rgb(142,218,252);
 }
