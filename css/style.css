@@ -1,0 +1,13 @@
+/* Background */
+
+#bg-stop {
+    background-image: linear-gradient(rgb(0,150,136) 20%, rgb(219,219,211) 20%);  
+}
+
+/* Main Content */
+
+#main-content {
+    width: 1200px;
+    border: 1px solid black;
+    height: 95%;
+}
