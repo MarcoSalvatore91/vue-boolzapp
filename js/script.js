@@ -28,6 +28,22 @@ const message = new Vue({
               name: 'Luisa',
               avatar: '_4',
             },
+            {
+              name: 'Giovanni',
+              avatar: '_5',
+            },
+            {
+              name: 'Martina',
+              avatar: '_6',
+            },
+            {
+              name: 'Alessio',
+              avatar: '_7',
+            },
+            {
+              name: 'Ilaria',
+              avatar: '_8',
+            },
           ]
     },
 })

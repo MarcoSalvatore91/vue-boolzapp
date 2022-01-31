@@ -59,6 +59,8 @@ li {
 
 #contact {
     background-color: white;
+    height: 440px;
+    overflow-y: scroll;
 }
 
 #contact ul {
