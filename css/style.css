@@ -10,6 +10,10 @@ i {
     color: grey;
 }
 
+img {
+    width: 50px;
+}
+
 /* Background */
 
 #bg-stop {
@@ -21,7 +25,6 @@ i {
 /* # TO DO REMOVE */
 #main-content {
     width: 1200px;
-    border: 1px solid black;
     height: 95%;
 }
 
@@ -29,10 +32,6 @@ i {
 
 #user {
     background-color: rgb(234,234,234); 
-}
-
-#user-info img {
-    width: 50px;
 }
 
 /* Alert Message */
@@ -51,3 +50,31 @@ i {
 #search {
     background-color: rgb(250,250,250);
 }
+
+/* Section Message */
+
+#section-message {
+    background-image: url("../img/mine.jpg");
+}
+
+/* Header current contact */
+
+#current-contact {
+    background-color: rgb(234,234,234);
+}
+
+/* Message */
+
+#message p {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#message #sended-message p {
+    background-color: rgb(213,249,186);
+}
+
+#message #received-message p {
+    background-color: white;
+}
+
