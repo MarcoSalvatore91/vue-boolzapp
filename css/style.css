@@ -72,6 +72,7 @@ li {
 #section-message {
     background-image: url("../img/mine.jpg");
     position: relative;
+    height: 670px;
 }
 
 /* Header current contact */
@@ -83,12 +84,13 @@ li {
 /* Message */
 
 #message {
-    margin: 0 60px;
+    overflow-y: scroll;
+    height: 506px;
 }
 
 #message .user-message, #message .contact-message {
     position: relative;
-    margin-top: 15px;
+    margin: 15px 30px;
 }
 
 #message .user-message, #message p {
@@ -122,6 +124,7 @@ li {
     background-color: rgb(234,234,234);
     position: absolute;
     bottom: 0;
+    width: 800px;
 }
 
 #input-message input {
