@@ -7,7 +7,9 @@ const message = new Vue({
     el: '#root',
 
     data: {
-
+        
+        newMessage: '',
+        
         currentIndex: 0,
 
         user: {
@@ -100,5 +102,27 @@ const message = new Vue({
 
     // ! Functions
 
+    
+    methods: {
+        
+        selectContact(index) {
+            this.currentIndex = index        
+        },
+    
+        isActive(index) {
+            if(this.currentIndex === index)
+            return true
+        },
+    
+        addMessage() {
+    
+            const newMessage = this.newMessage;
+            if (newMessage) {
+                this.contacts.push({text: newMessage, status: 'sent',})
+            }
+            this.newMessage = '';
+    
+        },
+    }
 })
 
