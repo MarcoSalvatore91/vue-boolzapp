@@ -88,12 +88,12 @@ li {
     height: 506px;
 }
 
-#message .user-message, #message .contact-message {
+#message .messages {
     position: relative;
     margin: 15px 30px;
 }
 
-#message .user-message, #message p {
+#message .messages, #message p {
     margin-bottom: 0;
 }
 
@@ -105,17 +105,31 @@ li {
     right: 10px;
 }
 
-#message .user-message, #message .contact-message {
+#message .messages {
     padding: 15px;
     border-radius: 10px;
 }
 
-#message #sended-message .user-message {
+.user-messages {
     background-color: rgb(213,249,186);
 }
 
-#message #received-message .contact-message {
+.contact-message {
     background-color: white;
+}
+
+.sended-message {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.received-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 /* Input Message */
@@ -131,4 +145,5 @@ li {
     width: 700px;
     height: 50px;
 }
+
 
