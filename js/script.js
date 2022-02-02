@@ -131,8 +131,9 @@ const message = new Vue({
             
         resultContact() {
             this.contacts.filter(contact => {
-                if(!contact.name.includes(this.searchContact)) {
+                if(!contact.name.toUpperCase().includes(this.searchContact.toUpperCase())) {
                     contact.visible = false;
+                    return true;
                 }
             })
         },
