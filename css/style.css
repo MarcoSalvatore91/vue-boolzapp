@@ -93,6 +93,7 @@ li {
 #message .messages {
     position: relative;
     margin: 15px 30px;
+    width: 250px;
 }
 
 #message .messages, #message p {
@@ -102,9 +103,9 @@ li {
 #message span {
     color: grey;
     font-size: 10px;
-    position: relative;
+    position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10px;
 }
 
 #message .messages {
