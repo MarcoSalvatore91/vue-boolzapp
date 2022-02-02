@@ -60,8 +60,8 @@
                     <!-- Contact -->
                     <section id="contact">
                         <div v-for='(contact, index) in contacts'>
-                            <ul>
-                                <li id="contact-name" v-if="contact.visible" class="d-flex" @click="selectContact(index)">
+                            <ul v-if="contact.visible">
+                                <li id="contact-name" class="d-flex" @click="selectContact(index)">
                                     <img class="rounded-circle" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="ms-2">{{ contact.name }}</div>
                                 </li>

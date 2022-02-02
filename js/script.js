@@ -84,7 +84,7 @@ const message = new Vue({
             ],
         },
         {
-            name: 'Luisa',
+            name: 'Matteo',
             avatar: '_4',
             visible: true,
             messages: [{
@@ -133,8 +133,7 @@ const message = new Vue({
             this.contacts.filter(contact => {
                 if(!contact.name.toUpperCase().includes(this.searchContact.toUpperCase())) {
                     contact.visible = false;
-                    return true;
-                }
+                } else contact.visible = true;
             })
         },
     },
