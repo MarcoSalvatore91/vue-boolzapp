@@ -45,7 +45,7 @@
                             <i class="fas fa-bell-slash rounded-circle p-3"></i>
                         </div>
 
-                        <!-- Alert Message -->
+                        <!-- Text Message -->
                         <div id="text-alert" class="align-self-center">
                             <span class="d-block">Ricevi notifiche di nuovi messaggi</span>
                             <span class="color-grey"><u>Attiva notifiche desktop</u></span>
@@ -54,14 +54,14 @@
 
                     <!-- Search -->
                     <section id="search" class="p-2">
-                        <input type="text" class="w-100 p-2" placeholder="&#128269; Cerca o inizia una nuova chat">
+                        <input type="text" v-model="searchContact" @keydown='resultContact' class="w-100 p-2" placeholder="&#128269; Cerca o inizia una nuova chat">
                     </section>
 
                     <!-- Contact -->
                     <section id="contact">
                         <div v-for='(contact, index) in contacts'>
                             <ul>
-                                <li id="contact-name" class="d-flex" @click="selectContact(index)">
+                                <li id="contact-name" v-if="contact.visible" class="d-flex" @click="selectContact(index)">
                                     <img class="rounded-circle" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                                     <div class="ms-2">{{ contact.name }}</div>
                                 </li>
@@ -91,8 +91,8 @@
 
                     <!-- Message -->
                     <section id="message">
-                        <div v-for="(message, index) in contacts[currentIndex].messages" :class="{'sended-message' : message.status === 'sent', 'received-message' : message.status === 'received'}">
-                          <div class="messages" :class="{'user-messages' : message.status === 'sent', 'contact-message' : message.status === 'received'}">
+                        <div v-for="(message, index) in contacts[currentIndex].messages" :class=" message.status ">
+                          <div class="messages">
                               <p>{{message.text}}</p>
                               <span>{{message.date}}</span>
                           </div>

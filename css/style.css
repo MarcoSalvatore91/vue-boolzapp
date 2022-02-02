@@ -44,6 +44,8 @@ li {
     background-color: rgb(142,218,252);
 }
 
+/* Icon Bells */
+
 #bells i {
     background-color: white;
     color: rgb(142,218,252);
@@ -110,22 +112,22 @@ li {
     border-radius: 10px;
 }
 
-.user-messages {
+.sent .messages {
     background-color: rgb(213,249,186);
 }
 
-.contact-message {
+.received .messages {
     background-color: white;
 }
 
-.sended-message {
+.sent {
   display: flex;
   flex-direction: row-reverse;
   justify-content: end;
   flex-wrap: wrap;
 }
 
-.received-message {
+.received {
   display: flex;
   flex-wrap: wrap;
 }
@@ -143,5 +145,3 @@ li {
     width: 700px;
     height: 50px;
 }
-
-

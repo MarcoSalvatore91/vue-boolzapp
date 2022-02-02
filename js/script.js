@@ -9,6 +9,8 @@ const message = new Vue({
     data: {
         
         newMessage: '',
+
+        searchContact: '',
         
         currentIndex: 0,
 
@@ -56,7 +58,7 @@ const message = new Vue({
             {
             date: '20/03/2020 16:35:00',
             text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-            status: 'received'
+            status: 'sent'
             }
             ],
         },
@@ -120,12 +122,20 @@ const message = new Vue({
             
             setTimeout(() => { 
                 this.addMessage('ok', 'received')
-            }, 1000);
+            }, 3000);
         },
 
         addMessage(text, status) {
             this.contacts[this.currentIndex].messages.push({date: '10/01/2020 15:30:55', text, status,})
-            }
         },
-})
+            
+        resultContact() {
+            this.contacts.filter(contact => {
+                if(!contact.name.includes(this.searchContact)) {
+                    contact.visible = false;
+                }
+            })
+        },
+    },
+ })
 
