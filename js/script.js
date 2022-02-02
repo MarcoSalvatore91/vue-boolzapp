@@ -113,16 +113,19 @@ const message = new Vue({
             if(this.currentIndex === index)
             return true
         },
-    
-        addMessage() {
-    
-            const newMessage = this.newMessage;
-            if (newMessage) {
-                this.contacts.push({text: newMessage, status: 'sent',})
-            }
-            this.newMessage = '';
-    
+
+        sendMessage() {
+            this.addMessage(this.newMessage, 'sent')
+            this.newMessage = ''; 
+            
+            setTimeout(() => { 
+                this.addMessage('ok', 'received')
+            }, 1000);
         },
-    }
+
+        addMessage(text, status) {
+            this.contacts[this.currentIndex].messages.push({date: '10/01/2020 15:30:55', text, status,})
+            }
+        },
 })
 

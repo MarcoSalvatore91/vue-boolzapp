@@ -100,9 +100,9 @@ li {
 #message span {
     color: grey;
     font-size: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    right: 10px;
+    right: 0;
 }
 
 #message .messages {
