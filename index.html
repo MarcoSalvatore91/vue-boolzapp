@@ -94,7 +94,7 @@
                         <div v-for="(message, index) in contacts[currentIndex].messages" :class=" message.status ">
                           <div class="messages d-flex">
                               <p>{{message.text}}</p>
-                              <i class="fas fa-chevron-down fa-x2" @click='hiddenMenu'></i>
+                              <i class="fas fa-chevron-down fa-x2" @click="hiddenMenu"></i>
                               <span>{{message.date}}</span>
                               <div class="menu bg-white" :class="{'close-menu' : !message.menuDown}">
                                   <div class="h-50 border text-center">
