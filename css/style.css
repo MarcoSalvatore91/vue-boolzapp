@@ -94,23 +94,20 @@ li {
     position: relative;
     margin: 15px 30px;
     width: 250px;
+    padding: 15px 30px 15px 15px;
+    border-radius: 10px;
 }
 
 #message .messages, #message p {
     margin-bottom: 0;
 }
 
-#message span {
+#message .messages > span {
     color: grey;
     font-size: 10px;
     position: absolute;
     bottom: 0;
     right: 10px;
-}
-
-#message .messages {
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .sent .messages {
@@ -133,16 +130,49 @@ li {
   flex-wrap: wrap;
 }
 
+.fa-chevron-down {
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.menu {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    right: 0;
+}
+
+.menu span {
+    font-size: 10px;
+    line-height: 50px;
+}
+
+.menu-block{
+    display: block;
+}
+
+.menu-none {
+    display: none;
+}
+
 /* Input Message */
 
-#input-message {
+.input-message {
     background-color: rgb(234,234,234);
     position: absolute;
     bottom: 0;
     width: 800px;
 }
 
-#input-message input {
+.input-message input {
     width: 700px;
     height: 50px;
+}
+
+.close-menu {
+    display: none;
 }
