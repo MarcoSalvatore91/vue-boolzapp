@@ -161,14 +161,14 @@ li {
 
 /* Input Message */
 
-.input-message {
+#input-message {
     background-color: rgb(234,234,234);
     position: absolute;
     bottom: 0;
     width: 800px;
 }
 
-.input-message input {
+#input-message input {
     width: 700px;
     height: 50px;
 }

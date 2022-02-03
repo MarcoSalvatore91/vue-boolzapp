@@ -154,9 +154,10 @@ const message = new Vue({
         },
 
         hiddenMenu () {
-            if(this.menuDown !== true){
+            const select = this.contacts[this.currentIndex].messages
+            if(select.menuDown === false){
                 return true
-            }
+            } else return false
         },
     },
  })
